@@ -48,7 +48,7 @@ def show_score(nice,mean,name):
     print("\n(), your current total: \n((), Nice) and ((), Mean)".format(name,nice,mean))
 
 
-def score(nice,mea,name):
+def score(nice,mean,name):
     # score function is being passed the values stored within the 3 variables
     if nice > 2: # if condition is valid, call win function passing in the variables so it can use them
         win(nice,mean,name)
@@ -60,7 +60,7 @@ def score(nice,mea,name):
 
 def win(nice,mean,name):
     # Substitute the {} wildcards with our variable values
-    print("\nNice job {}, you win! \nEveryone loves you and you've \made lots of friends along the way!".formal(name))
+    print("\nNice job {}, you win! \nEveryone loves you and you've \made lots of friends along the way!".format(name))
     # call again function and pass in our variables
     again(nice,mean,name)
 
