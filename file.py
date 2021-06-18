@@ -58,5 +58,5 @@ with conn:
     fileList = ('information.docx','Hello.txt','myImage.png', \
                 'myMovie.mpg','World.txt','data.pdf','myPhoto.jpg')
     for item in file_List:
-        if item = txt.endswith(".txt")
+        if item == txt.endswith(".txt")
     print(item)
