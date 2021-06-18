@@ -55,9 +55,8 @@ conn = sqlite3.connect('files.db')
 
 
 with conn:
-    cur=conn.cursor()
-    cur.execute("SELECT col_texts FROM tbl_documents")
-    varDocs=cur.fetchall()
-    for item in varDocs:
-        msg=r.varDocs
-    print(msg)
+    fileList = ('information.docx','Hello.txt','myImage.png', \
+                'myMovie.mpg','World.txt','data.pdf','myPhoto.jpg')
+    for item in file_List:
+        if item = txt.endswith(".txt")
+    print(item)
