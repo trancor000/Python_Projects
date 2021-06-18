@@ -7,9 +7,8 @@ with conn:
     cur = conn.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS tbl_documents( \
         ID INTEGER PRIMARY KEY AUTOINCREMENT, \
-        col_docs TEXT, \
-        col_texts TEXT, \
-        col_pdfs TEXT \
+        col_ID INT\
+        col_file TEXT \
         )")
     conn.commit()
 conn.close()
@@ -19,7 +18,7 @@ conn = sqlite3.connect('files.db')
 
 with conn:
     cur = conn.cursor()
-    cur.execute("INSERT INTO tbl_documents(col_docs, col_texts, col_pdfs) VALUES (?, ?, ?)",
+    cur.execute("INSERT INTO tbl_documents(col_file) VALUES (?, ?, ?)",
                 ('information.docx', ('Hello.txt', 'World.txt'), 'data.pdf'))
     conn.commit()
 conn.close()
