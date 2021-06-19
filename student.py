@@ -1,3 +1,4 @@
+# instantiation of parent class with attributes
 class Person:
     name = "Corey Tran"
     user = "Ctran.prosper@gmail.com"
@@ -11,6 +12,8 @@ class Person:
             print("Login complete, {}".format(entry_name))
         else:
             print("The user or password is incorrect.")
+
+# Child class with attributes
 
 
 class Student(Person):
