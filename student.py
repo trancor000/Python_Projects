@@ -30,8 +30,9 @@ class Student(Person):
         else:
             print("User or code is incorrect")
 
-    instructor = Person()
-    instructor.getLoginInfo()
 
-    pupil = Student()
-    pupil.getLoginInfo()
+instructor = Person()
+instructor.getLoginInfo()
+
+pupil = Student()
+pupil.getLoginInfo()
