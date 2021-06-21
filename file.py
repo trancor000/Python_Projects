@@ -6,7 +6,8 @@ with conn:
     cur = conn.cursor()
     cur.execute(
         "CREATE TABLE IF NOT EXISTS documents (txts VARCHAR(255))")
-    conn.close()
+    conn.commit
+conn.close()
 
 with conn:
     fileList = ('information.docx', 'Hello.txt', 'myImage.png',
