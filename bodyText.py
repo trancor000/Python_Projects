@@ -46,7 +46,7 @@ class ParentWindow(Frame):#basic tkinter code for GUI
         self.btnCancel.grid(row=3, column=1,padx=(0,90), pady=(30,0), sticky=NE)
     
 
-    def submit(self): #function to obtain the information
+    def submit(self): #function to obtain the information 
         fn = self.varFName.get()
         ln = self.varLName.get()
         btext = self.varBText.get()
