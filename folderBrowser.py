@@ -9,7 +9,7 @@ class ParentWindow(Frame):
 
         self.master = master
         self.master.resizable(width=False, height=False)
-        self.master.geometry('{}x{}'.format(700, 400))
+        self.master.geometry('{}x{}'.format(701, 400))
         self.master.title('File Browser')
         self.master.config(bg='lightgray')
 
